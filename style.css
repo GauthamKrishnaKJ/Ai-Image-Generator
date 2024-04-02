@@ -147,3 +147,38 @@ button:disabled, button[disabled]{
 #image-grid img:hover{
     border-color: #675afe;
 }
+
+/* css for small screen */
+@media only screen and (max-width: 600px){
+    .container{
+        position: relative;
+        width: 21rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.44);
+        padding: 20px 30px;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.4px);
+        -webkit-backdrop-filter: blur(7.4px);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    h1{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    button{
+        width: 25%;
+        height: 36px;
+        color: #fff;
+        border: 1px solid #ccc;
+        background: #20232c;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+}
